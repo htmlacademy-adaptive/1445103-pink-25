@@ -1,0 +1,245 @@
+.form-registration {
+  max-width: 940px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-flow: row wrap;
+  }
+}
+
+.form-registration__credentials-wrapper {
+  padding-bottom: 43px;
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 434px;
+  }
+}
+
+.form-registration__achievements-wrapper {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  background-color: @bg-color-main;
+
+  @media (min-width: @tablet-width) {
+    order: 4;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }
+}
+
+.form-registration__contacts-wrapper {
+  padding-top: 35px;
+  padding-bottom: 36px;
+
+  @media (min-width: @tablet-width) {
+    order: 3;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }
+}
+
+.form-registration__app-wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: @bg-color-main;
+
+  @media (min-width: @tablet-width) {
+    order: 2;
+  }
+}
+
+.form-registration__emotions-wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    order: 5;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }
+}
+
+.form-registration__submit-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 29px 20px 15px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    order: 6;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }
+}
+
+.form-registration__fieldset {
+  position: relative;
+  margin: 0;
+  padding: 0 20px;
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    border: 2px solid @light-grey;
+    border-radius: 2px;
+  }
+}
+
+.form-registration__credentials {
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
+}
+
+.form-registration__label {
+  color: @red;
+  text-transform: uppercase;
+}
+
+.form-registration__legend {
+  display: block;
+  box-sizing: border-box;
+  padding: 0 24px;
+  width: 100%;
+  line-height: 18px;
+  color: @red;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.form-registration__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.form-registration__input {
+  display: block;
+  padding: 14px 20px 15px;
+  font-size: 18px;
+  box-sizing: border-box;
+  min-height: 59px;
+  width: 100%;
+  border-radius: 1px;
+  border: 2px solid @light-grey;
+  color: @main-font-and-bg;
+}
+
+.form-registration__input:hover {
+  border-color: @main-font-and-bg;
+}
+
+.form-registration__input:focus {
+  border-color: @red;
+}
+/* Тут у меня не получается. Я опять забыла, что подразумевается под active в стайлгайде, я уже пробовала и active
+и focus, и все равно ничего не работает, когда проверяю*/
+
+.form-registration__label-checkbox {
+  font-size: 18px;
+  position: relative;
+  display: block;
+  padding-left: 69px;
+  padding-top: 5px;
+  padding-bottom: 4px;
+  color: @main-font-and-bg;
+  cursor: pointer;
+}
+
+.form-registration__label-checkbox::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 35px;
+  height: 35px;
+  border: 2px solid @light-grey;
+  border-radius: 2px;
+  background-color: @white;
+}
+
+.form-registration__label-checkbox::after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 11px;
+  transform: rotate(-45deg);
+  width: 21px;
+  height: 10px;
+  border-left: 2px solid @red;
+  border-bottom: 2px solid @red;
+}
+
+.form-registration__label-radio {
+  font-size: 18px;
+  color: @main-font-and-bg;
+  position: relative;
+  display: block;
+  padding-left: 69px;
+  padding-top: 5px;
+  padding-bottom: 4px;
+  cursor: pointer;
+}
+
+.form-registration__label-radio::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 35px;
+  height: 35px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: @light-grey;
+  border-radius: 50%;
+  background-color: @white;
+}
+
+.form-registration__label-radio::after {
+  content: "";
+  position: absolute;
+  left: 13px;
+  top: 50%;
+  width: 14px;
+  height: 14px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-color: @red;
+}
+
+.form-registration__textarea {
+  font-size: 18px;
+  color: @main-font-and-bg;
+  margin-top: 16px;
+  padding: 14px 19px;
+  min-height: 200px;
+  resize: vertical;
+}
+
+.form-registration__button {
+  width: 276px;
+
+  @media (min-width: @tablet-width) {
+    width: 296px;
+  }
+}
