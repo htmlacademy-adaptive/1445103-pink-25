@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Каталог</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <base href="https://htmlacademy-adaptive.github.io/1445103-pink-25/4/">
+</head>
+  <body class="page-body">
+    <header class="page-header">
+      <div class="page-header__nav-wrapper">
+        <div class="page-header__logo-wrapper">
+          <a class="page-header__logo" href="index.html">
+            <img src="img/icons/pink.svg" width="74" height="23" alt="Лого pink">
+          </a>
+        </div>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="index.html">
+                  Главная
+                </a>
+              </li>
+              <li class="main-nav__item  main-nav__item--active">
+                <a class="main-nav__link">
+                  Фотографии
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="form.html">
+                  Конкурс
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">
+                  HTML Academy
+                </a>
+              </li>
+            </ul>
+        </nav>
+      </div>
+      <div class="header-title header-wrapper">
+        <h1 class="header-title__text">Фотографии пользователей</h1>
+      </div>
+    </header>
+    <main class="page-main">
+      <div class="page-main__subtitle-wrapper">
+        <p class="page-main__subtitle">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+      </div>
+      <section class="gallery">
+        <h2 class="visually-hidden">Фото от пользователей приложения</h2>
+        <figure class="photo photo--full">
+          <a class="photo__link photo__link--full" href="#" data-panorama-text="Панорама дня">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/catalog/panorama-desktop@1x.jpg 1x, img/catalog/panorama-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/catalog/panorama-tablet@1x.jpg 1x, img/catalog/panorama-tablet@2x.jpg 2x">
+                <img class="photo__image image" src="img/catalog/panorama-mobile@1x.jpg" srcset="img/catalog/panorama-mobile@2x.jpg 2x" alt="Панорама">
+            </picture>
+          </a>
+          <figcaption class="photo__content">
+            <p class="photo__author">
+              <b class="photo__author-name">Анна</b>
+              <time class="photo__time" datetime="2021-11-30T03:00">(5 минут назад)</time>
+            </p>
+            <p class="photo__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <div class="photo__likes">
+              <button class="photo__likes-button" type="button" aria-label="Лайк"></button>
+              <span class="photo__likes-count">Нравится: 215</span>
+            </div>
+          </figcaption>
+        </figure>
+        <div class="gallery__photo-wrapper">
+          <figure class="gallery__photo photo">
+            <a class="photo__link" href="#">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/catalog/photo-levon-desktop@1x.jpg 1x, img/catalog/photo-levon-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/catalog/photo-levon-tablet@1x.jpg 1x, img/catalog/photo-levon-tablet@2x.jpg 2x">
+                <img class="photo__image image" src="img/catalog/photo-levon-mobile@1x.jpg" srcset="img/catalog/photo-levon-mobile@2x.jpg 2x" alt="Фото Машины">
+              </picture>
+            </a>
+            <figcaption class="photo__content">
+              <p class="photo__author">
+                <b class="photo__author-name">Левон</b>
+                <time class="photo__time" datetime="2021-11-30T03:00">(5 часов назад)</time>
+              </p>
+              <p class="photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <div class="photo__likes">
+                <button class="photo__likes-button" type="button" aria-label="Лайк"></button>
+                <span class="photo__likes-count">Нравится: 356</span>
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="gallery__photo photo">
+            <a class="photo__link" href="#">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/catalog/photo-anton-desktop@1x.jpg 1x, img/catalog/photo-anton-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/catalog/photo-anton-tablet@1x.jpg 1x, img/catalog/photo-anton-tablet@2x.jpg 2x">
+                <img class="photo__image image" src="img/catalog/photo-anton-mobile@1x.jpg" srcset="img/catalog/photo-anton-mobile@2x.jpg 2x" alt="Фото Барабанов">
+              </picture>
+            </a>
+            <figcaption class="photo__content">
+              <p class="photo__author">
+                <b class="photo__author-name">Антон</b>
+                <time class="photo__time" datetime="2021-11-30T03:00">(12 часов назад)</time>
+              </p>
+              <p class="photo__text">Соседи будут рады!</p>
+              <div class="photo__likes">
+                <button class="photo__likes-button" type="button" aria-label="Лайк"></button>
+                <span class="photo__likes-count">Нравится: 666</span>
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="gallery__photo photo">
+            <a class="photo__link" href="#">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/catalog/photo-boris-desktop@1x.jpg 1x, img/catalog/photo-boris-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/catalog/photo-boris-tablet@1x.jpg 1x, img/catalog/photo-boris-tablet@2x.jpg 2x">
+                <img class="photo__image image" src="img/catalog/photo-boris-mobile@1x.jpg" srcset="img/catalog/photo-boris-mobile@2x.jpg 2x" alt="Фото Здания">
+              </picture>
+            </a>
+            <figcaption class="photo__content">
+              <p class="photo__author">
+                <b class="photo__author-name">Борис</b>
+                <time class="photo__time" datetime="2021-11-30T03:00">(20 часов назад)</time>
+              </p>
+              <p class="photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <div class="photo__likes">
+                <button class="photo__likes-button" type="button" aria-label="Лайк"></button>
+                <span class="photo__likes-count">Нравится: 215</span>
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="gallery__photo photo">
+            <a class="photo__link" href="#">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/catalog/photo-sergey-desktop@1x.jpg 1x, img/catalog/photo-sergey-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/catalog/photo-sergey-tablet@1x.jpg 1x, img/catalog/photo-sergey-tablet@2x.jpg 2x">
+                <img class="photo__image image" src="img/catalog/photo-sergey-mobile@1x.jpg" srcset="img/catalog/photo-sergey-mobile@2x.jpg 2x" alt="Фото Кубани">
+              </picture>
+            </a>
+            <figcaption class="photo__content">
+              <p class="photo__author">
+                <b class="photo__author-name">Сергей</b>
+                <time class="photo__time" datetime="2021-11-30T03:00">(25 часов назад)</time>
+              </p>
+              <p class="photo__text">Самая кубанская в мире!</p>
+              <div class="photo__likes">
+                <button class="photo__likes-button" type="button" aria-label="Лайк"></button>
+                <span class="photo__likes-count">Нравится: 4</span>
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="gallery__photo photo">
+            <a class="photo__link" href="#">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/catalog/photo-maksim-desktop@1x.jpg 1x, img/catalog/photo-maksim-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/catalog/photo-maksim-tablet@1x.jpg 1x, img/catalog/photo-maksim-tablet@2x.jpg 2x">
+                <img class="photo__image image" src="img/catalog/photo-maksim-mobile@1x.jpg" srcset="img/catalog/photo-maksim-mobile@2x.jpg 2x" alt="Фото Путешествия">
+              </picture>
+            </a>
+            <figcaption class="photo__content">
+              <p class="photo__author">
+                <b class="photo__author-name">Максим</b>
+                <time class="photo__time" datetime="2021-11-30T03:00">(40 часов назад)</time>
+              </p>
+              <p class="photo__text">Где снег-то?</p>
+              <div class="photo__likes">
+                <button class="photo__likes-button" type="button" aria-label="Лайк"></button>
+                <span class="photo__likes-count">Нравится: 150</span>
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="gallery__photo photo">
+            <a class="photo__link" href="#">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/catalog/photo-nadya-desktop@1x.jpg 1x, img/catalog/photo-nadya-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/catalog/photo-nadya-tablet@1x.jpg 1x, img/catalog/photo-nadya-tablet@2x.jpg 2x">
+                <img class="photo__image image" src="img/catalog/photo-nadya-mobile@1x.jpg" srcset="img/catalog/photo-nadya-mobile@2x.jpg 2x" alt="Фото Самолета">
+              </picture>
+            </a>
+            <figcaption class="photo__content">
+              <p class="photo__author">
+                <b class="photo__author-name">Надежда</b>
+                <time class="photo__time" datetime="2021-11-30T03:00">(45 часов назад)</time>
+              </p>
+              <p class="photo__text">Всем GM и взаимные лайки!</p>
+              <div class="photo__likes">
+                <button class="photo__likes-button" type="button" aria-label="Лайк"></button>
+                <span class="photo__likes-count">Нравится: 2560</span>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="photo-editor">
+        <header class="photo-editor__header">
+          <h2 class="visually-hidden">Добавить свою фотографию</h2>
+          <p class="photo-editor__title">Затмите их всех! <br>Выкладывайте все, что накопилось в телефоне!</p>
+        </header>
+        <div class="photo-editor__form">
+          <form class="upload-form" action="https://echo.htmlacademy.ru/" enctype="multipart/form-data" method="post">
+            <input class="visually-hidden" type="file" id="image" name="image">
+            <label class="upload-form__image" for="image" aria-label="Загрузите фотографию"></label>
+            <div class="upload-form__controls">
+              <div class="upload-form__filters">
+                <div class="upload-form__filters-buttons">
+                  <button class="upload-form__filter-button upload-form__filter-button--current" type="button" aria-label="Обрезка">
+                    <svg width="44" height="44" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16 14H18V6C18 5.46957 17.7893 4.96086 17.4142 4.58579C17.0391 4.21071 16.5304 4 16 4H8V6H16V14ZM6 16V0H4V4H0V6H4V16C4 16.5304 4.21071 17.0391 4.58579 17.4142C4.96086 17.7893 5.46957 18 6 18H16V22H18V18H22V16H6Z" fill="#D22856"/>
+                    </svg>
+                  </button>
+                  <button class="upload-form__filter-button" type="button" aria-label="Заливка">
+                    <svg width="48" height="43" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16.56 9.14791L7.62 0L6.205 1.44791L8.585 3.88326L3.44 9.14791C3.1591 9.4357 3.00132 9.82581 3.00132 10.2326C3.00132 10.6393 3.1591 11.0294 3.44 11.3172L8.94 16.9451C9.22125 17.2325 9.6025 17.394 10 17.394C10.3975 17.394 10.7787 17.2325 11.06 16.9451L16.56 11.3172C16.8409 11.0294 16.9987 10.6393 16.9987 10.2326C16.9987 9.82581 16.8409 9.4357 16.56 9.14791ZM5.205 10.2326L10 5.33116L14.795 10.2326H5.205ZM19 11.7674C19 11.7674 17 13.9828 17 15.3488C17 15.8916 17.2107 16.4121 17.5858 16.7959C17.9609 17.1797 18.4696 17.3953 19 17.3953C19.5304 17.3953 20.0391 17.1797 20.4142 16.7959C20.7893 16.4121 21 15.8916 21 15.3488C21 13.9828 19 11.7674 19 11.7674Z" fill="#D22856"/>
+                      <path d="M24 20.4651H0V22H24V20.4651Z" fill="#D22856"/>
+                    </svg>
+                  </button>
+                  <button class="upload-form__filter-button" type="button" aria-label="Контрастность">
+                    <svg width="43" height="43" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8 2C9.18669 2 10.3467 2.35189 11.3334 3.01118C12.3201 3.67047 13.0892 4.60754 13.5433 5.7039C13.9974 6.80025 14.1162 8.00665 13.8847 9.17054C13.6532 10.3344 13.0818 11.4035 12.2426 12.2426C11.4035 13.0818 10.3344 13.6532 9.17054 13.8847C8.00666 14.1162 6.80026 13.9974 5.7039 13.5433C4.60755 13.0891 3.67047 12.3201 3.01119 11.3334C2.3519 10.3467 2 9.18669 2 8C2 6.4087 2.63214 4.88258 3.75736 3.75736C4.88258 2.63214 6.4087 2 8 2ZM8 0C6.41775 0 4.87103 0.469192 3.55544 1.34824C2.23985 2.22729 1.21447 3.47672 0.608967 4.93853C0.00346625 6.40034 -0.15496 8.00887 0.153721 9.56072C0.462403 11.1126 1.22433 12.538 2.34315 13.6569C3.46197 14.7757 4.88743 15.5376 6.43928 15.8463C7.99113 16.155 9.59966 15.9965 11.0615 15.391C12.5233 14.7855 13.7727 13.7602 14.6518 12.4446C15.5308 11.129 16 9.58225 16 8C16 5.87827 15.1571 3.84344 13.6569 2.34315C12.1566 0.842855 10.1217 0 8 0Z" fill="#D22856"/>
+                      <path d="M8 12.145C9.07679 12.0711 10.0854 11.5912 10.822 10.8023C11.5586 10.0134 11.9683 8.97432 11.9683 7.895C11.9683 6.81567 11.5586 5.77659 10.822 4.98769C10.0854 4.1988 9.07679 3.71891 8 3.645" fill="#D22856"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="upload-form__filter upload-form__filter--current">
+                <div class="upload-form__icon-wrapper"></div>
+                <input class="upload-form__filter-range" type="range" min="1" max="100" name="crop" value="85">
+              </div>
+              <div class="upload-form__filter">
+                <div class="upload-form__icon-wrapper"></div>
+                <input class="upload-form__filter-range" type="range" min="1" max="100" name="fill" value="15">
+              </div>
+              <div class="upload-form__filter">
+                <div class="upload-form__icon-wrapper"></div>
+                <input class="upload-form__filter-range" type="range" min="1" max="100" name="contrast" value="50">
+              </div>
+              <div class="upload-form__buttons">
+                <button class="upload-form__button upload-form__button--active button" type="submit">Запостить</button>
+                <button class="upload-form__button button" type="reset">Отмена</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer container">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo">
+          <a class="logo-footer">
+            <img src="img/icons/logo-pink-grey.png" width="145" height="40" alt="Логотип Пинк">
+          </a>
+        </div>
+        <ul class="social-links">
+          <li class="social-links__item">
+            <a class="social-links__link social-links__link--vk" href="#">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_36151_58)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.5875 4.711C17.712 4.3015 17.5875 4 16.9913 4H15.0225C14.5215 4 14.2905 4.26025 14.1652 4.5475C14.1652 4.5475 13.164 6.9445 11.7458 8.5015C11.2867 8.953 11.0782 9.09625 10.8278 9.09625C10.7025 9.09625 10.5142 8.953 10.5142 8.54275V4.711C10.5142 4.219 10.3763 4 9.95925 4H6.86325C6.5505 4 6.36225 4.228 6.36225 4.44475C6.36225 4.9105 7.07175 5.0185 7.1445 6.3295V9.178C7.1445 9.80275 7.02975 9.916 6.77925 9.916C6.11175 9.916 4.488 7.50775 3.52425 4.75225C3.3375 4.216 3.1485 4 2.64525 4H0.675C0.1125 4 0 4.26025 0 4.5475C0 5.059 0.6675 7.6 3.10875 10.9608C4.73625 13.2558 7.0275 14.5 9.11475 14.5C10.3665 14.5 10.521 14.224 10.521 13.7478V12.013C10.521 11.4603 10.6395 11.35 11.0363 11.35C11.3287 11.35 11.829 11.494 12.9975 12.6003C14.3325 13.912 14.5523 14.5 15.3038 14.5H17.2725C17.835 14.5 18.117 14.224 17.955 13.678C17.7765 13.135 17.139 12.3468 16.2938 11.4115C15.8348 10.879 15.1463 10.3053 14.937 10.018C14.6453 9.64975 14.7285 9.4855 14.937 9.15775C14.937 9.15775 17.337 5.83825 17.5868 4.711H17.5875Z" fill="#D22856"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_36151_58">
+                <rect width="18" height="18" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg>
+            </a>
+          </li>
+          <li class="social-links__item">
+            <a class="social-links__link social-links__link--telegram" href="#">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.7035 3.20204L14.3269 14.4099C14.1475 15.2007 13.68 15.3976 13.0157 15.0252L9.39433 12.3567L7.64721 14.0375C7.45371 14.231 7.29227 14.3924 6.91934 14.3924L7.17977 10.7047L13.891 4.64035C14.1829 4.38048 13.8274 4.23592 13.4376 4.49635L5.14071 9.72085L1.56884 8.6026C0.792024 8.36017 0.777961 7.82579 1.73084 7.45285L15.7016 2.07029C16.3485 1.82785 16.9144 2.21429 16.7035 3.2026V3.20204Z" fill="#D22856"/>
+              </svg>
+            </a>
+          </li>
+          <li class="social-links__item">
+            <a class="social-links__link social-links__link--youtube" href="#">
+              <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.83356 12.8089C1.64633 12.9278 1.42471 12.9941 1.19626 12.9996C0.967817 13.0051 0.74263 12.9495 0.548717 12.8398C0.354804 12.7301 0.200724 12.571 0.105646 12.3824C0.010569 12.1938 -0.0213097 11.984 0.0139762 11.779V1.22097C-0.0213097 1.01605 0.010569 0.806234 0.105646 0.617628C0.200724 0.429021 0.354804 0.269949 0.548717 0.1602C0.74263 0.0504516 0.967817 -0.00512927 1.19626 0.000372265C1.42471 0.0058738 1.64633 0.0722149 1.83356 0.191142L14.2333 5.69284C15.2556 6.13817 15.2556 6.86183 14.2333 7.30716L1.83356 12.8089Z" fill="#D22856"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <div class="page-footer__copyright copyright">
+          <p class="page-footer__copyright-text">Разработано</p>
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img src="img/icons/html-academy-icon.svg" alt="HTML Academy">
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+    </script>
+  </body>
+</html>
