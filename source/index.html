@@ -10,7 +10,7 @@
     <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page-body">
-    <header class="page-header">
+    <!--<header class="page-header">
       <div class="page-header__nav-wrapper">
         <h1 class="visually-hidden">Pink - приложение для фотографий</h1>
         <div class="page-header__logo-wrapper">
@@ -75,6 +75,61 @@
             </ul>
             <p class="info__note">Доступно для iPhone, iPad, Android,<br>Windows Phone, OS X, Windows 8</p>
           </div>
+        </div>
+      </div>
+    </header>-->
+    <header class="main-header">
+      <h1 class="visually-hidden">Pink - приложение для фотографий</h1>
+      <div class="main-header__top">
+        <div class="main-header__top-wrapper">
+          <a class="main-header__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/header-inbox/logotype-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/header-inbox/logotype-white-tablet.svg">
+              <img src="img/header-inbox/pink.svg" alt="Логотип Pink">
+            </picture>
+          </a>
+          <button class="main-header__toggle" type="button" aria-label="Раскрыть меню"></button>
+          <nav class="navigation navigation--closed navigation--nojs">
+            <ul class="navigation__list">
+              <li class="navigation__item navigation__item--active">
+                <a class="navigation__link" href="">Главная</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="catalog.html">Фотографии</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="form.html">Конкурс</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">HTML Academy</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="main-header__content-wrapper">
+        <div class="main-header__content">
+          <p class="main-header__slogan">Взгляните на жизнь иначе!</p>
+          <a class="main-header__link-app" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
+          <ul class="main-header__list">
+            <li class="main-header__item">
+              <a class="main-header__link" href="https://www.apple.com/ru/app-store/">
+                <img src="img/header-inbox/apple-logo.svg" alt="Логотип">
+              </a>
+            </li>
+            <li class="main-header__item">
+              <a class="main-header__link" href="https://play.google.com/store;?hl=ru&gl=US">
+                <img src="img/header-inbox/android-logo.svg" alt="Логотип">
+              </a>
+            </li>
+            <li class="main-header__item">
+              <a class="main-header__link" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone">
+                <img src="img/header-inbox/microsoft-logo.svg" alt="Логотип Windows">
+              </a>
+            </li>
+          </ul>
+          <p class="main-header__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
       </div>
     </header>
@@ -321,7 +376,7 @@
         </div>
       </div>
     </footer>
-    <script>
+    <!--<script>
       var navMain = document.querySelector('.main-nav');
       var navToggle = document.querySelector('.main-nav__toggle');
 
@@ -334,6 +389,22 @@
         } else {
           navMain.classList.add('main-nav--closed');
           navMain.classList.remove('main-nav--opened');
+        }
+      });
+    </script>-->
+    <script>
+      var navMain = document.querySelector('.navigation');
+      var navToggle = document.querySelector('.main-header__toggle');
+
+      navMain.classList.remove('navigation--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('navigation--closed')) {
+          navMain.classList.remove('navigation--closed');
+          navMain.classList.add('navigation--opened');
+        } else {
+          navMain.classList.add('navigation--closed');
+          navMain.classList.remove('navigation--opened');
         }
       });
     </script>
