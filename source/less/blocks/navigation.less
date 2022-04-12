@@ -1,5 +1,5 @@
 .navigation {
-  display: none;
+  //display: none;
   width: 100%;
   position: absolute;
   top: 100%;
@@ -86,5 +86,24 @@
   &:active::before,
   &:active::after {
     background-color: @red;
+  }
+}
+
+@media (max-width: @mobile-and-tablet-width-only) {
+  .navigation--closed .navigation__item {
+    display: none;
+  }
+
+  .navigation--nojs .main-header__toggle {
+    display: none;
+  }
+
+  .navigation--nojs .navigation__list {
+    position: static;
+    min-height: 0;
+  }
+
+  .navigation--nojs .navigation__item {
+    display: block;
   }
 }
