@@ -39,6 +39,9 @@
   }
 
   @media (min-width: @desktop-width) {
+    width: auto;
+    max-width: 155px;
+    margin-right: 165px;
     background-color: transparent;
   }
 }
@@ -54,8 +57,8 @@
   }
 }
 
-@media (min-width: @desktop-width) {
-  .page-header__nav-wrapper {
+.page-header__nav-wrapper {
+  @media (min-width: @desktop-width) {
     display: flex;
     align-items: center;
     align-content: center;
@@ -63,10 +66,5 @@
     background-color: fade(@black, 30%);
     background-position: 100%;
   }
-
-  .page-header__logo {
-    width: auto;
-    max-width: 155px;
-    margin-right: 165px;
-  }
 }
+
