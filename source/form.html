@@ -243,5 +243,13 @@
         }
       });
     </script>
+    <script>
+      const btnToggle = document.querySelector('.main-nav__toggle');
+      const mainHeader = document.querySelector('.page-header__nav-wrapper');
+
+      btnToggle.addEventListener('click', function() {
+        mainHeader.classList.toggle('page-header__nav-wrapper--active');
+      })
+    </script>
   </body>
 </html>

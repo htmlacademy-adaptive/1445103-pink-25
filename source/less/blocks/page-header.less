@@ -32,7 +32,6 @@
 .page-header__logo {
   display: block;
   height: 69px;
-  background-color: fade(@black, 30%);
 
   @media (min-width: @tablet-width) {
     height: 109px;
@@ -58,13 +57,18 @@
 }
 
 .page-header__nav-wrapper {
+  background-color: @black-fade;
+
   @media (min-width: @desktop-width) {
     display: flex;
     align-items: center;
     align-content: center;
     justify-content: center;
-    background-color: fade(@black, 30%);
     background-position: 100%;
   }
+}
+
+.page-header__nav-wrapper--active {
+  background-color: @main-font-and-bg;
 }
 
