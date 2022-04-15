@@ -89,7 +89,7 @@
               <img src="img/header-inbox/pink.svg" alt="Логотип Pink">
             </picture>
           </a>
-          <button class="main-header__toggle" type="button" aria-label="Раскрыть меню"></button>
+          <button class="main-header__toggle main-header__toggle—-active" type="button" aria-label="Раскрыть меню"></button>
           <nav class="navigation navigation--closed navigation--nojs">
             <ul class="navigation__list">
               <li class="navigation__item navigation__item--active">
@@ -391,6 +391,13 @@
           navMain.classList.remove('navigation--opened');
         }
       });
+      </script>
+      <script>
+      const btnToggle = document.querySelector('.main-header__toggle');
+
+      btnToggle.addEventListener('click', function() {
+        btnToggle.classList.toggle('main-header__toggle--active');
+      })
     </script>
   </body>
 </html>

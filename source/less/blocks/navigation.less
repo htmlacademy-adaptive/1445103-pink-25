@@ -53,42 +53,6 @@
   }
 }
 
-//Это крестик, который закрывает меню
-.navigation--opened .main-header__toggle {
-  top: 0;
-  right: 0;
-
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    top: 31px;
-    right: 18px;
-    width: 30px;
-    height: 3px;
-    background-color: @white;
-
-    @media (min-width: @tablet-width) {
-      top: 49px;
-      right: 20px;
-    }
-  }
-
-  &::before {
-    transform: rotate(45deg);
-    box-shadow: none;
-  }
-
-  &::after {
-    transform: rotate(-45deg);
-  }
-
-  &:active::before,
-  &:active::after {
-    background-color: @red;
-  }
-}
-
 @media (max-width: @mobile-and-tablet-width-only) {
   .navigation--closed .navigation__item {
     display: none;

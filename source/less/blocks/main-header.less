@@ -82,6 +82,42 @@
   box-shadow: 0 10px 0 0 @white, 0 20px 0 0 @white;
 }
 
+//Это крестик, который закрывает меню
+.main-header__toggle--active {
+  top: 0;
+  right: 0;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    right: 19px;
+    width: 30px;
+    height: 3px;
+    background-color: @white;
+
+    @media (min-width: @tablet-width) {
+      top: 17px;
+      right: 20px;
+    }
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: @red;
+  }
+}
+
 .main-header__content-wrapper {
   padding: 30px 20px 38px;
   background-image: url("../img/header-inbox/phone-hand.png");
