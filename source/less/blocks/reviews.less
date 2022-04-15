@@ -1,0 +1,52 @@
+.reviews {
+  position: relative;
+  text-align: center;
+  padding-top: 24px;
+  padding-bottom: 45px;
+
+  @media (min-width: @desktop-width) {
+    padding-top: 185px;
+    padding-bottom: 40px;
+    background-image: url("../img/icons/quotes.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 73px;
+    background-size: 79px 63px;
+  }
+}
+
+.reviews__item {
+  margin: 0 20px;
+}
+
+.reviews__author-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: @black;
+}
+
+.reviews__author-description {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__author-description {
+    display: inline;
+  }
+
+  .reviews__author-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviews__author-information-wrapper {
+    order: 2;
+  }
+}
+
+.reviews-arrows {
+  display: none;
+}
+
+.reviews__text {
+  margin: 0;
+}

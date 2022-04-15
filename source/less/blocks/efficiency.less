@@ -1,0 +1,44 @@
+.efficiency {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @bg-color-main;
+  }
+}
+
+.efficiency__content-wrapper {
+  margin: 0 auto;
+  padding: 75px 20px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 620px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+  }
+}
+
+.efficiency__title {
+  font-size: 30px;
+  line-height: 36px;
+  color: @black;
+
+  @media (min-width: @desktop-width) {
+    line-height: 30px;
+  }
+}
+
+.efficiency__text {
+  line-height: 24px;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
+}

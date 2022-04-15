@@ -4,8 +4,7 @@
     <meta charset="utf-8">
     <title>Конкурс</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="favicon.ico">
     <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
     <link rel="manifest" href="manifest.webmanifest">
@@ -15,7 +14,11 @@
     <div class="page-header__nav-wrapper">
       <div class="page-header__logo-wrapper">
         <a class="page-header__logo" href="index.html">
-          <img src="img/icons/pink.svg" width="74" height="23" alt="Лого pink">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/header-inbox/logotype-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/header-inbox/logotype-white-tablet.svg">
+            <img src="img/header-inbox/pink.svg" alt="Логотип Pink">
+          </picture>
         </a>
       </div>
       <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -44,7 +47,7 @@
         </ul>
       </nav>
     </div>
-    <div class="headre-title header-wrapper">
+    <div class="header-title header-wrapper">
       <h1 class="header-title__text">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </div>
     </header>
@@ -165,8 +168,8 @@
           </div>
         </form>
     </main>
-    <footer class="page-footer container">
-      <div class="page-footer__wrapper">
+    <footer class="page-footer">
+      <div class="page-footer__wrapper container">
         <div class="page-footer__logo">
           <a class="logo-footer">
             <img src="img/icons/logo-pink-grey.png" width="145" height="40" alt="Логотип Пинк">
@@ -225,7 +228,7 @@
         <p class="modal-form__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       </div>
       <div class="modal-form__bottom modal-form__bottom--failure">
-       <button class="button button--form">ок</button>
+        <button class="button button--form">ок</button>
       </div>
     </div>
     <script>
@@ -242,6 +245,14 @@
           navMain.classList.add('main-nav--closed');
           navMain.classList.remove('main-nav--opened');
         }
+      });
+    </script>
+    <script>
+      const btnToggle = document.querySelector('.main-nav__toggle');
+      const mainHeader = document.querySelector('.page-header__nav-wrapper');
+
+      btnToggle.addEventListener('click', function() {
+        mainHeader.classList.toggle('page-header__nav-wrapper--active');
       });
     </script>
   </body>
