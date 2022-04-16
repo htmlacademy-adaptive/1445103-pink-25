@@ -3,6 +3,7 @@
   text-align: center;
   padding-top: 24px;
   padding-bottom: 45px;
+  min-height: 220px;
 
   @media (min-width: @desktop-width) {
     padding-top: 185px;
@@ -14,8 +15,16 @@
   }
 }
 
-.reviews__item {
-  margin: 0 20px;
+.reviews__list {
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 700px;
+  }
 }
 
 .reviews__author-name {
