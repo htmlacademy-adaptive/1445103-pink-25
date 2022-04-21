@@ -112,16 +112,20 @@
   }
 }
 
+.form-registration__emotions {
+  @media (min-width: @desktop-width) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
 .form-registration__label {
   color: @red;
   text-transform: uppercase;
 }
 
 .form-registration__legend {
-  display: block;
-  box-sizing: border-box;
   padding: 0 24px;
-  width: 100%;
   line-height: 18px;
   color: @red;
   text-transform: uppercase;
@@ -231,6 +235,8 @@
 }
 
 .form-registration__textarea {
+  display: block;
+  width: 100%;
   font-size: 18px;
   color: @main-font-and-bg;
   margin-top: 16px;
