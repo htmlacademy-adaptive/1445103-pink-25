@@ -1,5 +1,7 @@
 .button {
   display: block;
+  border: 0;
+  font: inherit;
   font-size: 18px;
   font-weight: 700;
   text-align: center;
@@ -16,4 +18,23 @@
   background-color: @light-green;
   border: 2px solid @light-green;
   border-radius: 1px;
+}
+
+.button--rounded {
+  padding: 15px;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 30px;
+  line-height: 18px;
+  background-color: transparent;
+}
+
+.button--red {
+  border-color: @red;
+  color: @red;
+}
+
+.button--gray {
+  border-color: rgba(40, 54, 69, 0.1);
+  color: #dddfe0;
 }
