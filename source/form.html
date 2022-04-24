@@ -10,43 +10,43 @@
     <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page-body">
-    <header class="page-header">
-    <div class="page-header__nav-wrapper">
-      <div class="page-header__logo-wrapper">
-        <a class="page-header__logo" href="index.html">
-          <picture>
-            <source media="(min-width: 960px)" srcset="img/header-inbox/logotype-white-desktop.svg">
-            <source media="(min-width: 660px)" srcset="img/header-inbox/logotype-white-tablet.svg">
-            <img src="img/header-inbox/pink.svg" alt="Логотип Pink">
-          </picture>
-        </a>
+    <header class="main-header">
+      <div class="main-header__top">
+        <div class="main-header__top-wrapper">
+          <a class="main-header__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/header-inbox/logotype-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/header-inbox/logotype-white-tablet.svg">
+              <img src="img/header-inbox/pink.svg" alt="Логотип Pink">
+            </picture>
+          </a>
+          <button class="main-header__toggle main-header__toggle—-active" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <nav class="navigation navigation--closed navigation--nojs">
+              <ul class="navigation__list">
+                <li class="navigation__item">
+                  <a class="navigation__link" href="index.html">
+                    Главная
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="catalog.html">
+                    Фотографии
+                  </a>
+                </li>
+                <li class="navigation__item navigation__item--active">
+                  <a class="navigation__link" href="form.html">
+                    Конкурс
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#">
+                    HTML Academy
+                  </a>
+                </li>
+              </ul>
+          </nav>
+        </div>
       </div>
-      <nav class="main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">
-              Фотографии
-            </a>
-          </li>
-          <li class="main-nav__item  main-nav__item--active">
-            <a class="main-nav__link">
-              Конкурс
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">
-              HTML Academy
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
     <div class="header-title header-wrapper">
       <h1 class="header-title__text">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </div>
@@ -232,28 +232,29 @@
       </div>
     </div>
     <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
+      var navMain = document.querySelector('.navigation');
+      var navToggle = document.querySelector('.main-header__toggle');
 
-      navMain.classList.remove('main-nav--nojs');
+      navMain.classList.remove('navigation--nojs');
 
       navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
+        if (navMain.classList.contains('navigation--closed')) {
+          navMain.classList.remove('navigation--closed');
+          navMain.classList.add('navigation--opened');
         } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
+          navMain.classList.add('navigation--closed');
+          navMain.classList.remove('navigation--opened');
         }
       });
-    </script>
-    <script>
-      const btnToggle = document.querySelector('.main-nav__toggle');
-      const mainHeader = document.querySelector('.page-header__nav-wrapper');
+      </script>
+      <script>
+      const btnToggle = document.querySelector('.main-header__toggle');
+      const mainHeader = document.querySelector('.main-header__top');
 
       btnToggle.addEventListener('click', function() {
-        mainHeader.classList.toggle('page-header__nav-wrapper--active');
-      });
+        btnToggle.classList.toggle('main-header__toggle--active');
+        mainHeader.classList.toggle('main-header__top--active');
+      })
     </script>
   </body>
 </html>

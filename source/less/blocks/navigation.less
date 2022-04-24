@@ -1,5 +1,4 @@
 .navigation {
-  //display: none;
   width: 100%;
   position: absolute;
   top: 100%;
@@ -23,6 +22,7 @@
   @media (min-width: @desktop-width) {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 
@@ -33,6 +33,20 @@
   @media (min-width: @desktop-width) {
     border-top: none;
     border-bottom: none;
+
+    &--active {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: -18px;
+        left: 0;
+        height: 2px;
+        background: @white;
+      }
+    }
   }
 }
 
@@ -44,12 +58,24 @@
   font-weight: 700;
   line-height: 1;
   color: @white;
+  text-transform: uppercase;
   text-decoration: none;
   text-align: center;
+
+  &:hover,
+  &:focus {
+    color: @red;
+  }
+
+  &:active {
+    color: @red-down;
+  }
 
   @media (min-width: @desktop-width) {
     font-weight: 400;
     padding: 0;
+    text-transform: none;
+    box-shadow: none;
   }
 }
 
