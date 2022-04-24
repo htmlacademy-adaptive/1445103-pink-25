@@ -1,6 +1,21 @@
+.photo-editor {
+  background-color: @bg-color-main;
+}
+
 .photo-editor__header {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 43px;
+  padding-bottom: 42px;
+  background-color: @white;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 64px;
+    padding-bottom: 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 59px;
+    padding-bottom: 66px;
+  }
 }
 
 .photo-iditor__form {
@@ -8,6 +23,9 @@
 }
 
 .photo-editor__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 30px;
   text-align: center;
 
   @media (min-width: @tablet-width) {
