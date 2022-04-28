@@ -229,8 +229,8 @@
 
 .form-registration__emotions {
   @media (min-width: @desktop-width) {
-    padding-left: 60px;
-    padding-right: 60px;
+    //padding-left: 60px;
+    //padding-right: 60px;
   }
 }
 
@@ -427,6 +427,15 @@
   padding: 14px 19px;
   min-height: 200px;
   resize: vertical;
+
+  @media (min-width: @tablet-width) {
+    max-width: 498px;
+    margin: 40px 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 812px;
+  }
 }
 
 .form-registration__button {
