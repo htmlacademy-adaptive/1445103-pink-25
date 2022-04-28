@@ -321,8 +321,9 @@
     //display: flex;
     //flex-wrap: wrap;
     display: grid;
-    grid-template-columns: 255px 255px 255px;
+    grid-template-columns: 273px 273px 273px;
     column-gap: 20px;
+    align-items: center;
   }
 }
 
@@ -332,6 +333,10 @@
 
 .form-registration__achievements-item:last-child {
   margin-bottom: 0;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 45px;
+  }
 }
 
 .form-registration__label-checkbox {
