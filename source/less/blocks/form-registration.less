@@ -14,9 +14,12 @@
 
 .form-registration__credentials-wrapper {
   padding-bottom: 43px;
+  padding-top: 6px;
 
   @media (min-width: @tablet-width) {
     order: 1;
+    padding-top: 18px;
+    padding-bottom: 23px;
   }
 
   @media (min-width: @desktop-width) {
@@ -61,6 +64,10 @@
   @media (min-width: @tablet-width) {
     order: 2;
     background-color: @white;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 3px;
   }
 }
 
@@ -107,9 +114,116 @@
   }
 }
 
+.form-registration__contacts {
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 38px 60px;
+  }
+}
+
+.form-registration__legend--contacts {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.form-registration__list-contacts {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.form-registration__contacts-item {
+  margin-bottom: 23px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 36px;
+    display: flex;
+    flex-direction: column;
+    //align-items: flex-start;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 2px;
+      right: 2px;
+      width: 60px;
+      height: 55px;
+      background-color: @light-grey;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.form-registration__contacts-item--phone::after {
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/icons/phone-icon.svg");
+  }
+}
+
+.form-registration__contacts-item--email::after {
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/icons/mail-icon.svg");
+  }
+}
+
+.form-registration__label--contacts {
+  @media (min-width: @tablet-width) {
+    order: 2;
+    margin-top: 18px;
+  }
+}
+
+.form-registration__input--contacts {
+  @media (min-width: @tablet-width) {
+    order: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 373px;
+  }
+}
+
+.form-registration__contacts-item:last-child {
+  margin-bottom: 0;
+}
+
 .form-registration__credentials {
   @media (min-width: @tablet-width) {
     border: none;
+  }
+}
+
+.form-registration__credentials-item {
+  margin-bottom: 24px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    align-items: center;
+    margin-bottom: 52px;
+  }
+}
+
+.form-registration__credentials-item:last-child {
+  margin-bottom: 0;
+}
+
+.form-registration__input-credentials {
+  margin-top: 16px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
   }
 }
 
@@ -117,6 +231,19 @@
   @media (min-width: @desktop-width) {
     padding-left: 60px;
     padding-right: 60px;
+  }
+}
+
+.form-registration__app {
+  @media (min-width: @tablet-width) {
+    padding: 52px 58px 55px;
+    max-width: 620px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 54px 50px 56px 74px;
+    width: auto;
+    max-width: 434px;
   }
 }
 
@@ -166,8 +293,6 @@
 .form-registration__input:focus {
   border-color: @red;
 }
-/* Тут у меня не получается. Я опять забыла, что подразумевается под active в стайлгайде, я уже пробовала и active
-и focus, и все равно ничего не работает, когда проверяю*/
 
 .form-registration__label-checkbox {
   font-size: 18px;
