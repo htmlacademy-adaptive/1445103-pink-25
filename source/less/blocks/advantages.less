@@ -1,6 +1,31 @@
 .advantages {
   color: @main-font-and-bg;
   background-color: @bg-color-main;
+  position: relative;
+
+  @media (min-width: @desktop-width) {
+    height: 600px;
+  }
+}
+
+.advantages::before {
+  content: "";
+  height: 32px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  //-webkit-clip-path: polygon(0 100%, 0 0, 100% 0);
+  clip-path: polygon(0 100%, 0 0, 100% 0);
+  background-color: @white;
+
+  @media (min-width: @tablet-width) {
+    height: 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 100px;
+  }
 }
 
 .advantages__list {
@@ -13,12 +38,12 @@
   padding-bottom: 286px;
   list-style: none;
   background-color: @bg-color-main;
-  background-image: url("../img/backgrounds/iphone-mobile@1x.jpg");
+  background-image: url("../img/backgrounds/iphone-screen-mobile@1x.png");
   background-position: 50% 478px;
   background-repeat: no-repeat;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/backgrounds/iphone-mobile@2x.jpg");
+    background-image: url("../img/backgrounds/iphone-screen-mobile@2x.png");
     background-size: 157px 320px;
   }
 
@@ -26,12 +51,12 @@
     flex-direction: column;
     align-items: flex-end;
     padding: 75px 0 45px;
-    background-image: url("../img/backgrounds/iphone-tablet@1x.jpg");
+    background-image: url("../img/backgrounds/iphone-screen-3-tablet@1x.png");
     background-size: 268px 547px;
     background-position: 7% 60px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/backgrounds/iphone-tablet@2x.jpg");
+      background-image: url("../img/backgrounds/iphone-screen-3-tablet@2x.png");
     }
   }
 
@@ -50,6 +75,7 @@
   margin-bottom: 31px;
   background-position: 50% 0;
   background-repeat: no-repeat;
+  z-index: 2;
 
   @media (min-width: @tablet-width) {
     margin-left: 300px;
