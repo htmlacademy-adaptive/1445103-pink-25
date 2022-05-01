@@ -61,6 +61,7 @@
   transform: rotate(-45deg);
   font-size: 14px;
   font-weight: 400;
+  line-height: 30px;
   color: @white;
 
   @media (min-width: @tablet-width) {
@@ -80,7 +81,9 @@
 }
 
 .table-price__license-type {
-  font-weight: bold;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
@@ -92,8 +95,9 @@
 }
 
 .table-price__license-price {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 300;
+  line-height: 30px;
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
@@ -150,6 +154,9 @@
 
 .table-price__feature::before {
   content: attr(data-feature-name);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
 
   @media (min-width: @tablet-width) {
     content: "";
