@@ -92,7 +92,11 @@
     <section class="efficiency">
       <div class="efficiency__content-wrapper">
         <div class="efficiency__image-wrapper">
-          <img src="img/timer.png" class="efficiency__image" alt="24 часа">
+          <picture>
+            <source media="(min-width: 980px)" srcset="img/timer-desktop.png">
+            <source media="(min-width: 660px)" srcset="img/timer.png">
+            <img class="efficiency__image" src="img/timer.png" alt="24 часа">
+          </picture>
         </div>
         <div class="efficiency__description">
           <h2 class="efficiency__title">Эффект на 24 часа!</h2>
