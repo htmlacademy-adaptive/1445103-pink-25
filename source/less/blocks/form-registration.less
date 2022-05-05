@@ -34,6 +34,8 @@
 
   @media (min-width: @tablet-width) {
     order: 4;
+    padding-top: 12px;
+    padding-bottom: 12px;
     background-color: @white;
   }
 
@@ -48,6 +50,7 @@
 
   @media (min-width: @tablet-width) {
     order: 3;
+    padding-top: 12px;
   }
 
   @media (min-width: @desktop-width) {
@@ -63,6 +66,7 @@
 
   @media (min-width: @tablet-width) {
     order: 2;
+    padding-top: 34px;
     background-color: @white;
   }
 
@@ -77,6 +81,7 @@
 
   @media (min-width: @tablet-width) {
     order: 5;
+    padding-top: 45px;
   }
 
   @media (min-width: @desktop-width) {
@@ -90,6 +95,7 @@
   padding: 29px 20px 2px;
 
   @media (min-width: @tablet-width) {
+    margin: 0;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -118,7 +124,7 @@
   margin: 0;
 
   @media (min-width: @tablet-width) {
-    padding: 38px 60px;
+    padding: 29px 57px;
   }
 }
 
@@ -126,7 +132,7 @@
   padding: 0;
   line-height: 18px;
   color: @red;
-  margin-bottom: 34px;
+  //margin-bottom: 34px;
   text-transform: uppercase;
   text-align: center;
 
@@ -143,6 +149,15 @@
   }
 }
 
+.form-registration__legend--app {
+  margin-bottom: 34px;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin-bottom: -8px;
+  }
+}
+
 .form-registration__list-contacts {
   @media (min-width: @desktop-width) {
     display: flex;
@@ -151,18 +166,13 @@
   }
 }
 
-.form-registration__legend--emotions {
-  margin-bottom: 0;
-}
-
 .form-registration__contacts-item {
   margin-bottom: 23px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 36px;
+    margin-bottom: 21px;
     display: flex;
     flex-direction: column;
-    //align-items: flex-start;
     position: relative;
 
     &::after {
@@ -171,7 +181,7 @@
       top: 2px;
       right: 2px;
       width: 60px;
-      height: 55px;
+      height: 58px;
       background-color: @light-grey;
       background-repeat: no-repeat;
       background-position: center;
@@ -195,7 +205,30 @@
   }
 }
 
+.form-registration__label {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  color: @red;
+  //margin-left: 21px;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    //margin-left: 0;
+  }
+}
+
+.form-registration__label-credentials {
+  margin-left: 21px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 0;
+  }
+}
+
 .form-registration__label--contacts {
+  margin-left: 21px;
+
   @media (min-width: @tablet-width) {
     order: 2;
     margin-top: 18px;
@@ -228,7 +261,8 @@
   @media (min-width: @tablet-width) {
     display: flex;
     align-items: center;
-    margin-bottom: 52px;
+    gap: 17px;
+    margin-bottom: 54px;
   }
 }
 
@@ -253,7 +287,7 @@
 
 .form-registration__app {
   @media (min-width: @tablet-width) {
-    padding: 52px 58px 55px;
+    padding: 54px 58px 58px 58px;
     max-width: 620px;
   }
 
@@ -270,15 +304,6 @@
 
 .form-registration__app-item:last-child {
   margin-bottom: 0;
-}
-
-.form-registration__label {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 30px;
-  color: @red;
-  margin-left: 21px;
-  text-transform: uppercase;
 }
 
 .form-registration__legend-text {
@@ -315,7 +340,7 @@
 
 .form-registration__achievements {
   @media (min-width: @tablet-width) {
-    padding: 50px 60px;
+    padding: 49px 58px;
   }
 
   @media (min-width: @desktop-width) {
@@ -346,6 +371,10 @@
 
 .form-registration__achievements-item {
   margin-bottom: 50px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 49px;
+  }
 }
 
 .form-registration__achievements-item:last-child {
@@ -406,6 +435,10 @@
   padding-top: 5px;
   padding-bottom: 4px;
   cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 60px;
+  }
 }
 
 .form-registration__label-radio::before {
@@ -454,7 +487,8 @@
 
   @media (min-width: @tablet-width) {
     max-width: 498px;
-    margin: 40px 60px;
+    margin: 37px 60px 52px 60px;
+    min-height: 192px;
   }
 
   @media (min-width: @desktop-width) {
@@ -466,7 +500,8 @@
   width: 280px;
 
   @media (min-width: @tablet-width) {
-    width: 296px;
+    width: 300px;
+    margin-top: 15px;
   }
 }
 
