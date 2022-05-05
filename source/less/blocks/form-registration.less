@@ -29,7 +29,7 @@
 
 .form-registration__achievements-wrapper {
   padding-top: 40px;
-  padding-bottom: 30px;
+  padding-bottom: 44px;
   background-color: @bg-color-main;
 
   @media (min-width: @tablet-width) {
@@ -44,7 +44,7 @@
 
 .form-registration__contacts-wrapper {
   padding-top: 35px;
-  padding-bottom: 36px;
+  padding-bottom: 44px;
 
   @media (min-width: @tablet-width) {
     order: 3;
@@ -57,7 +57,7 @@
 
 .form-registration__app-wrapper {
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 45px;
   min-height: 150px;
   background-color: @bg-color-main;
 
@@ -72,8 +72,8 @@
 }
 
 .form-registration__emotions-wrapper {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 38px;
+  padding-bottom: 20px;
 
   @media (min-width: @tablet-width) {
     order: 5;
@@ -87,7 +87,7 @@
 .form-registration__submit-wrapper {
   display: flex;
   flex-direction: column;
-  padding: 29px 20px 15px;
+  padding: 29px 20px 2px;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
@@ -122,6 +122,19 @@
   }
 }
 
+.form-registration__legend {
+  padding: 0;
+  line-height: 18px;
+  color: @red;
+  margin-bottom: 34px;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 24px;
+  }
+}
+
 .form-registration__legend--contacts {
   display: none;
 
@@ -136,6 +149,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+}
+
+.form-registration__legend--emotions {
+  margin-bottom: 0;
 }
 
 .form-registration__contacts-item {
@@ -206,7 +223,7 @@
 }
 
 .form-registration__credentials-item {
-  margin-bottom: 24px;
+  margin-bottom: 6px;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -248,7 +265,7 @@
 }
 
 .form-registration__app-item {
-  margin-bottom: 36px;
+  margin-bottom: 42px;
 }
 
 .form-registration__app-item:last-child {
@@ -256,20 +273,18 @@
 }
 
 .form-registration__label {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
   color: @red;
+  margin-left: 21px;
   text-transform: uppercase;
 }
 
-.form-registration__legend {
-  padding: 0;
+.form-registration__legend-text {
+  font-size: 14px;
+  font-weight: 400;
   line-height: 18px;
-  color: @red;
-  text-transform: uppercase;
-  text-align: center;
-
-  @media (min-width: @tablet-width) {
-    padding: 0 24px;
-  }
 }
 
 .form-registration__list {
@@ -283,7 +298,7 @@
   padding: 14px 20px 15px;
   font-size: 18px;
   box-sizing: border-box;
-  min-height: 59px;
+  min-height: 62px;
   width: 100%;
   border-radius: 1px;
   border: 2px solid @light-grey;
@@ -309,6 +324,8 @@
 }
 
 .form-registration__legend--achievements {
+  padding-left: 20px;
+  padding-right: 20px;
   margin-bottom: 35px;
 
   @media (min-width: @tablet-width) {
@@ -328,7 +345,7 @@
 }
 
 .form-registration__achievements-item {
-  margin-bottom: 45px;
+  margin-bottom: 50px;
 }
 
 .form-registration__achievements-item:last-child {
@@ -343,7 +360,7 @@
   font-size: 18px;
   position: relative;
   display: block;
-  padding-left: 69px;
+  padding-left: 57px;
   padding-top: 5px;
   padding-bottom: 4px;
   color: @main-font-and-bg;
@@ -356,8 +373,8 @@
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  width: 35px;
-  height: 35px;
+  width: 36px;
+  height: 36px;
   border: 2px solid @light-grey;
   border-radius: 2px;
   background-color: @white;
@@ -397,8 +414,8 @@
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  width: 35px;
-  height: 35px;
+  width: 38px;
+  height: 38px;
   border-width: 2px;
   border-style: solid;
   border-color: @light-grey;
@@ -427,9 +444,11 @@
   display: block;
   width: 100%;
   font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
   color: @main-font-and-bg;
   margin-top: 16px;
-  padding: 14px 19px;
+  padding: 14px 18px;
   min-height: 200px;
   resize: vertical;
 
@@ -444,9 +463,30 @@
 }
 
 .form-registration__button {
-  width: 276px;
+  width: 280px;
 
   @media (min-width: @tablet-width) {
     width: 296px;
+  }
+}
+
+.form-registration__note {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 34px;
+}
+
+.form-registration__star {
+  color: @red;
+}
+
+.form-registration__note-star {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: inline;
   }
 }
