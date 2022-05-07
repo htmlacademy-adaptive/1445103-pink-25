@@ -1,6 +1,30 @@
 .advantages {
   color: @main-font-and-bg;
   background-color: @bg-color-main;
+  position: relative;
+
+  @media (min-width: @desktop-width) {
+    height: 600px;
+  }
+}
+
+.advantages::before {
+  content: "";
+  height: 32px;
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 100%;
+  clip-path: polygon(0 100%, 0 0, 100% 0);
+  background-color: @white;
+
+  @media (min-width: @tablet-width) {
+    height: 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 100px;
+  }
 }
 
 .advantages__list {
@@ -9,36 +33,38 @@
   justify-content: center;
   margin: 0 auto;
   padding: 0;
-  padding-top: 52px;
+  padding-top: 82px;
   padding-bottom: 286px;
   list-style: none;
   background-color: @bg-color-main;
-  background-image: url("../img/backgrounds/iphone-mobile@1x.jpg");
-  background-position: 50% 478px;
+  background-image: url("../img/backgrounds/iphone-screen-mobile@1x.png");
+  background-position: 50% 510px;
   background-repeat: no-repeat;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/backgrounds/iphone-mobile@2x.jpg");
+    background-image: url("../img/backgrounds/iphone-screen-mobile@2x.png");
     background-size: 157px 320px;
   }
 
   @media (min-width: @tablet-width) {
     flex-direction: column;
     align-items: flex-end;
-    padding: 75px 0 45px;
-    background-image: url("../img/backgrounds/iphone-tablet@1x.jpg");
+    padding: 75px 0 11px;
+    background-image: url("../img/backgrounds/iphone-tablet@1x.png");
     background-size: 268px 547px;
-    background-position: 7% 60px;
+    background-position: 0% 7px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/backgrounds/iphone-tablet@2x.jpg");
+      background-image: url("../img/backgrounds/iphone-tablet@2x.png");
     }
   }
 
   @media (min-width: @desktop-width) {
+    padding: 4px 0 11px;
     flex-direction: row;
     justify-content: space-around;
     align-items: stretch;
+    gap: 20px;
     background-image: none;
   }
 }
@@ -50,6 +76,7 @@
   margin-bottom: 31px;
   background-position: 50% 0;
   background-repeat: no-repeat;
+  z-index: 2;
 
   @media (min-width: @tablet-width) {
     margin-left: 300px;
@@ -60,8 +87,8 @@
 
   @media (min-width: @desktop-width) {
     padding-top: 339px;
-    margin-right: 30px;
-    margin-left: 30px;
+    margin-right: 0;
+    margin-left: 0;
     width: 240px;
     text-align: center;
     background-size: 292px 302px;
@@ -106,19 +133,30 @@
   color: @black;
   margin-bottom: 12px;
 
+  @media (min-width: @tablet-width) {
+    margin-bottom: 15px;
+  }
+
   @media (min-width: @desktop-width) {
     font-size: 30px;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 0;
   }
 }
 
 .advantages__description {
   margin-block-start: 0;
   margin-block-end: 0;
+  font-size: 14px;
+  font-weight: 400;
   line-height: 24px;
   margin: 0;
   padding: 0;
 
   @media (min-width: @desktop-width) {
     font-size: 18px;
+    line-height: 30px;
+    margin-top: 21px;
   }
 }

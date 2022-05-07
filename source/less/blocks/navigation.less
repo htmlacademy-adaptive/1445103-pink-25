@@ -41,13 +41,17 @@
         content: "";
         position: absolute;
         right: 0;
-        bottom: -18px;
+        bottom: -13px;
         left: 0;
         height: 2px;
         background: @white;
       }
     }
   }
+}
+
+.navigation__list:first-child {
+  border-top: 1px solid @black;
 }
 
 .navigation__link {
@@ -73,6 +77,7 @@
 
   @media (min-width: @desktop-width) {
     font-weight: 400;
+    line-height: 18px;
     padding: 0;
     text-transform: none;
     box-shadow: none;

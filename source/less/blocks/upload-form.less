@@ -147,6 +147,7 @@
 }
 
 .upload-form__filter-range {
+  .input-range(100%; 2px; 14px);
   padding: 0;
   background-color: transparent;
   margin: 0 0 0 auto;
@@ -201,4 +202,9 @@
 
 .upload-form__icon-button--current {
   fill: @red;
+}
+
+.upload-form__filter-range,
+.upload-form__filter-range::-webkit-slider-thumb {
+  appearance: none;
 }

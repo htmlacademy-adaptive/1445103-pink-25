@@ -10,74 +10,6 @@
     <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page-body">
-    <!--<header class="page-header">
-      <div class="page-header__nav-wrapper">
-        <h1 class="visually-hidden">Pink - приложение для фотографий</h1>
-        <div class="page-header__logo-wrapper">
-          <a class="page-header__logo">
-            <img src="img/icons/pink.svg" width="74" height="23" alt="Лого pink">
-          </a>
-        </div>
-        <nav class="main-nav main-nav--closed main-nav--nojs">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-            <ul class="main-nav__list">
-              <li class="main-nav__item main-nav__item--active">
-                <a class="main-nav__link">
-                  Главная
-                </a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="catalog.html">
-                  Фотографии
-                </a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="form.html">
-                  Конкурс
-                </a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="#">
-                  HTML Academy
-                </a>
-              </li>
-            </ul>
-        </nav>
-      </div>
-      <div class="info container">
-        <div class="info__wrapper">
-          <h2 class="visually-hidden">
-            Информация о приложении
-          </h2>
-          <div class="info__slogan-wrapper">
-            <p class="info__slogan">
-              Взгляните на жизнь<br>иначе!
-            </p>
-          </div>
-          <div class="info__content-wrapper">
-            <a class="info__download-button button" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
-            <ul class="info__list">
-              <li class="info__item">
-                <a class="info__link" href="https://www.apple.com/ru/app-store/">
-                  <img src="img/icons/apple-logo.png" width="47" height="56" alt="Логотип Apple">
-                </a>
-              </li>
-              <li class="info__item">
-                <a class="info__link" href="https://play.google.com/store;?hl=ru&gl=US">
-                  <img src="img/icons/android-logo.png" width="43" height="47" alt="Логотип Андроид">
-                </a>
-              </li>
-              <li class="info__item">
-                <a class="info__link" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone">
-                  <img src="img/icons/microsoft-logo.png" width="44" height="41" alt="Логотип Windows">
-                </a>
-              </li>
-            </ul>
-            <p class="info__note">Доступно для iPhone, iPad, Android,<br>Windows Phone, OS X, Windows 8</p>
-          </div>
-        </div>
-      </div>
-    </header>-->
     <header class="main-header">
       <h1 class="visually-hidden">Pink - приложение для фотографий</h1>
       <div class="main-header__top">
@@ -148,7 +80,7 @@
           </li>
           <li class="advantages__item advantages__item--second">
             <h3 class="advantages__title">Меняет мир вокруг</h3>
-            <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить&nbsp;эффект</p>
           </li>
           <li class="advantages__item advantages__item--third">
             <h3 class="advantages__title">Заводит новых друзей</h3>
@@ -160,7 +92,11 @@
     <section class="efficiency">
       <div class="efficiency__content-wrapper">
         <div class="efficiency__image-wrapper">
-          <img src="img/timer.png" class="efficiency__image" alt="24 часа">
+          <picture>
+            <source media="(min-width: 980px)" srcset="img/timer-desktop.png">
+            <source media="(min-width: 660px)" srcset="img/timer.png">
+            <img class="efficiency__image" src="img/timer.png" alt="24 часа">
+          </picture>
         </div>
         <div class="efficiency__description">
           <h2 class="efficiency__title">Эффект на 24 часа!</h2>
@@ -193,7 +129,7 @@
         <div class="reviews-arrows arrows">
           <button class="arrows__arrow-button arrows__arrow-button--prev" type="button" aria-label="Назад">
           </button>
-          <button class="arrows__arrow-button arrows__arrow-button--prev" type="button" aria-label="Вперед">
+          <button class="arrows__arrow-button arrows__arrow-button--next" type="button" aria-label="Вперед">
           </button>
         </div>
       </div>
@@ -332,7 +268,6 @@
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <iframe class="map-google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2sau!4v1640504642884!5m2!1sen!2sau" width="100%" height="200" style="border: 0;" allowfullscreen="" loading="lazy" title="Офи компании по адресу Большая Конюшенная 19/8"></iframe>
     </div>
-    <div class="map__marker"></div>
     <footer class="page-footer">
       <div class="page-footer__wrapper container">
         <div class="page-footer__logo">

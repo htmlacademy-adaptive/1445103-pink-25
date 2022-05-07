@@ -1,17 +1,25 @@
 .header-wrapper {
-  padding: 11px 20px 27px;
+  padding: 13px 20px 27px;
   min-height: 100px;
+
+  @media (min-width: @tablet-width) {
+    padding: 33px 20px 27px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 25px 76px 56px;
+  }
 }
 
 .header-title__text {
   font-size: 24px;
   color: @white;
   font-weight: 300;
-  line-height: 32.68px;
+  line-height: 33px;
   text-align: center;
 
   @media (min-width: @tablet-width) {
     font-size: 50px;
-    line-height: 68.09px;
+    line-height: 68px;
   }
 }
