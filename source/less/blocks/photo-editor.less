@@ -1,5 +1,10 @@
 .photo-editor {
   background-color: @bg-color-main;
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 38px;
+    background-color: @white;
+  }
 }
 
 .photo-editor__header {
@@ -13,7 +18,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 59px;
+    padding-top: 24px;
     padding-bottom: 66px;
   }
 }
