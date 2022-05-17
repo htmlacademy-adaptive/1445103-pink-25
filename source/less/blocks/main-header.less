@@ -3,16 +3,34 @@
   background-position: 50% 0;
   background-size: auto;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/header-inbox/bg-back-mobile@2x.jpeg");
+    background-position: 50% 2px;
+    background-size: 687px 460px;
+  }
+
   @media (min-width: @tablet-width) {
     background: @bg-color-header url("../img/header-inbox/bg-back-tablet.jpg") no-repeat;
     background-position: 50% 0;
     background-size: auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/header-inbox/bg-back-tablet@2x.jpeg");
+      background-position: 50% 2px;
+      background-size: 1200px 729px;
+    }
   }
 
   @media (min-width: @desktop-width) {
     background: @bg-color-header url("../img/header-inbox/bg-back-desktop.jpg") no-repeat;
     background-position: 50% 0;
     background-size: auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/header-inbox/bg-back-desktop@2x.jpeg");
+      background-position: 50% 16px;
+      background-size: 2560px 845px;
+    }
   }
 }
 
@@ -138,12 +156,24 @@
   background-size: auto;
   background-position: 50% 110px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/header-inbox/iphone-hand-mobile@2x.png");
+    background-size: 260px 286px;
+    background-position: 0% 110px;
+  }
+
   @media (min-width: @tablet-width) {
     width: 660px;
     margin: 0 auto;
     padding: 94px 20px 113px;
     background-image: url("../img/header-inbox/phone-hand-tablet.png");
     background-position: 50% 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/header-inbox/iphone-hand-tablet@2x.png");
+      background-size: 693px 543px;
+      background-position: 52% 76px;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -151,6 +181,12 @@
     padding: 100px 0 123px;
     background-image: url("../img/header-inbox/phone-hand-desktop.png");
     background-position: 33px 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/header-inbox/iphone-hand-desktop@2x.png");
+      background-size: 1061px 645px;
+      background-position: -38% 98px;
+    }
   }
 }
 

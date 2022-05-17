@@ -47,12 +47,24 @@
 
 .page-main__subtitle-wrapper {
   padding-top: 44px;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
   text-align: center;
+  padding-left: 35px;
+  padding-right: 35px;
 
   @media (min-width: @tablet-width) {
     padding-top: 90px;
-    padding-bottom: 54px;
+    padding-bottom: 78px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 51px;
+  }
+}
+
+.page-main__subtitle-wrapper--catalog {
+  @media (min-width: @desktop-width) {
+    padding-bottom: 90px;
   }
 }
 
@@ -69,5 +81,13 @@
 
   @media (min-width: @desktop-width) {
     max-width: 790px;
+  }
+}
+
+.page-main__divider {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
   }
 }

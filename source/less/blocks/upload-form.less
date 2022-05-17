@@ -9,12 +9,13 @@
   @media (min-width: @tablet-width) {
     flex-direction: row;
     align-items: flex-start;
-    padding-top: 57px;
-    padding-bottom: 54px;
+    padding-top: 41px;
+    padding-bottom: 31px;
   }
 
   @media (min-width: @desktop-width) {
     padding: 41px 60px 57px 80px;
+    background-color: @bg-color-main;
   }
 }
 
@@ -54,12 +55,13 @@
 .upload-form__controls {
   @media (min-width: @tablet-width) {
     margin-top: 0;
-    margin-left: auto;
+    margin-left: 47px;
   }
 
   @media (min-width: @desktop-width) {
     margin-right: 0;
     width: 410px;
+    margin-left: 90px;
   }
 }
 
@@ -117,7 +119,7 @@
   bottom: 0;
   width: calc(100% + 40px * 2);
   height: 1px;
-  background-color: #dddfe0;
+  background-color: @dirty-white;
 
   @media (min-width: @tablet-width) {
     left: 0;
@@ -155,7 +157,7 @@
   height: 14px;
 
   @media (min-width: @tablet-width) {
-    margin-right: 18px;
+    margin-right: 5px;
     width: 202px;
   }
 
@@ -175,24 +177,17 @@
 }
 
 .upload-form__button {
-  //color: fade(@main-font-and-bg, 10%);
-  //line-height: 18px;
-  //text-align: center;
-  //box-sizing: border-box;
-  //border-radius: 30px;
-  //border: 3px solid fade(@main-font-and-bg, 10%);
-  //padding: 13px 30px;
-  //width: 280px;
-  //background-color: transparent;
   margin-bottom: 13px;
   width: 280px;
 
   @media (min-width: @tablet-width) {
     width: 260px;
+    margin-bottom: 25px;
   }
 
   @media (min-width: @desktop-width) {
     width: 183px;
+    margin-bottom: 0;
   }
 }
 
@@ -202,6 +197,20 @@
 
 .upload-form__icon-button--current {
   fill: @red;
+}
+
+.upload-form__icon {
+  @media (min-width: @desktop-width) {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+.upload-form__icon--contrast {
+  @media (min-width: @desktop-width) {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 .upload-form__filter-range,

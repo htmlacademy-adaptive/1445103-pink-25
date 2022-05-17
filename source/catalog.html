@@ -5,7 +5,7 @@
     <title>Каталог</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
     <link rel="manifest" href="manifest.webmanifest">
   </head>
@@ -48,31 +48,31 @@
         </div>
       </div>
       <div class="header-title header-wrapper">
-        <h1 class="header-title__text">Фотографии пользователей</h1>
+        <h1 class="header-title__text">Фотографии<br> пользователей</h1>
       </div>
     </header>
     <main class="page-main">
-      <div class="page-main__subtitle-wrapper container">
-        <p class="page-main__subtitle">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+      <div class="page-main__subtitle-wrapper page-main__subtitle-wrapper--catalog container">
+        <p class="page-main__subtitle">Взгляните на фотографии, которые выкладывают пользователи!<br class="page-main__divider"> Видите, как не хватает ваших?</p>
       </div>
       <section class="gallery">
         <h2 class="visually-hidden">Фото от пользователей приложения</h2>
         <figure class="photo photo--full">
-          <a class="photo__link photo__link--full" href="#" data-panorama-text="Панорама дня">
+          <a class="photo__link photo__link--full" href="#">
             <picture>
               <source media="(min-width: 960px)" srcset="img/catalog/panorama-desktop@1x.jpg 1x, img/catalog/panorama-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/catalog/panorama-tablet@1x.jpg 1x, img/catalog/panorama-tablet@2x.jpg 2x">
                 <img class="photo__image photo__image--full image" src="img/catalog/panorama-mobile@1x.jpg" srcset="img/catalog/panorama-mobile@2x.jpg 2x" alt="Панорама">
             </picture>
           </a>
-          <figcaption class="photo__content photo__content--full">
+          <figcaption class="photo__content photo__content--full" data-panorama-text="Панорама дня">
             <p class="photo__author">
               <b class="photo__author-name">Анна</b>
               <time class="photo__time" datetime="2021-11-30T03:00">(5 минут назад)</time>
             </p>
-            <p class="photo__text photo__text--full">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <p class="photo__text photo__text--full">Прыгать или нет? Напишите в комментарии свой совет и<br class="photo__divider"> смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
             <div class="photo__likes photo__likes--full">
-              <button class="photo__likes-button" type="button" aria-label="Лайк"></button>
+              <button class="photo__likes-button photo__likes-button--full" type="button" aria-label="Лайк"></button>
               <span class="photo__likes-count">Нравится: 215</span>
             </div>
           </figcaption>
@@ -308,7 +308,10 @@
         <div class="page-footer__copyright copyright">
           <p class="page-footer__copyright-text">Разработано</p>
           <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img src="img/icons/html-academy-icon.svg" alt="HTML Academy">
+            <!--<img src="img/icons/html-academy-icon.svg" alt="HTML Academy">-->
+            <svg width="27" height="34">
+              <use xlink:href="img/sprite.svg#html-academy-icon"></use>
+            </svg>
           </a>
         </div>
       </div>

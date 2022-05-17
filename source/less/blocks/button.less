@@ -17,7 +17,7 @@
   align-items: center;
   background-color: @light-green;
   border: 2px solid @light-green;
-  border-radius: 1px;
+  border-radius: 2px;
 }
 
 .button--rounded {
@@ -35,6 +35,16 @@
 }
 
 .button--gray {
-  border-color: rgba(40, 54, 69, 0.1);
-  color: #dddfe0;
+  border-color: @button-grey;
+  color: @dirty-white;
+}
+
+.button--modal {
+  @media (min-width: @tablet-width) {
+    width: 299px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 458px;
+  }
 }

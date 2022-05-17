@@ -27,7 +27,17 @@
 }
 
 .modal-form__top {
-  padding: 23px 20px 24px 20px;
+  padding: 23px 20px 24px 22px;
+}
+
+.modal-form__top--success {
+  @media (min-width: @tablet-width) {
+    padding: 23px 65px 12px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 23px 157px 12px;
+  }
 }
 
 .modal-form__bottom {
@@ -38,15 +48,33 @@
 
 .modal-form__bottom--success {
   background-color: @bg-color-main;
+
+  @media (min-width: @desktop-width) {
+    padding: 54px 20px 52px;
+  }
 }
 
 .modal-form__title {
   font-size: 18px;
+  font-weight: 700;
   line-height: 24px;
   color: @black;
+  margin-bottom: 24px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 40px;
+  }
 }
 
 .modal-form__text {
+  font-size: 14px;
+  font-weight: 400;
   line-height: 24px;
   color: @main-font-and-bg;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
 }
