@@ -60,8 +60,27 @@
 
 .price__toggles {
   text-align: center;
+  margin-top: 26px;
 
   @media (min-width: @tablet-width) {
     display: none;
   }
+}
+
+.price__toggle {
+  box-sizing: content-box;
+  margin-left: 4px;
+  margin-right: 9px;
+  padding: 0;
+  width: 6px;
+  height: 6px;
+  border: 0;
+  border-radius: 50%;
+  background-color: fade(@main-font-and-bg, 30%);
+  cursor: pointer;
+}
+
+.price__toggle--current {
+  background-color: @white;
+  border: 3px solid @main-font-and-bg;
 }
